@@ -9,7 +9,7 @@ detector = HandDetector(maxHands=1)
 classifier = Classifier("Keras_model/keras_model.h5", "Keras_model/labels.txt")
 offset = 20
 imgSize = 300
-folder = "Data/C"
+# folder = "Data/C"
 counter = 0
 labels = ["Л", "М", "Н", "О", "П"]
 while True:
