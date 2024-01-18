@@ -40,7 +40,7 @@ hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3, max
 #         plt.figure()
 #         plt.imshow(img_rgb)
 # plt.show()
-
+selected_folders = ['./0','./1', './2', './3', './4']
 for dir_ in os.listdir(DATA_DIR):
     counter = 0
     for img_path in os.listdir(os.path.join(DATA_DIR, dir_)):

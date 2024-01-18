@@ -6,12 +6,12 @@ import numpy as np
 import math
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
-classifier = Classifier("Keras_model/keras_model.h5", "Keras_model/labels.txt")
+classifier = Classifier("Keras_model/А-G1200/keras_model.h5", "Keras_model/А-G1200/labels.txt")
 offset = 20
 imgSize = 300
 folder = "Data/C"
 counter = 0
-labels = ["Л", "М", "Н", "О", "П"]
+labels = ["А", "Б", "В", "Г", "Ґ"] # "А", "Б", "В", "Г", "Ґ","Р", "С", "Т", "У", "Ф"
 while True:
     success, img = cap.read()
     imgOutput = img.copy()
@@ -42,10 +42,10 @@ while True:
             prediction, index = classifier.getPrediction(imgWhite, draw=False)
         cv2.rectangle(imgOutput, (x - offset, y - offset-50),
                       (x - offset+90, y - offset-50+50), (255, 0, 255), cv2.FILLED)
-        cv2.putText(imgOutput, labels[index], (x, y -26), cv2.FONT_HERSHEY_COMPLEX, 1.7, (255, 255, 255), 2)
+        cv2.putText(imgOutput, labels[index], (x, y - 26), cv2.FONT_HERSHEY_COMPLEX, 1.7, (255, 255, 255), 2)
         cv2.rectangle(imgOutput, (x-offset, y-offset),
                       (x + w+offset, y + h+offset), (255, 0, 255), 4)
-        cv2.imshow("ImageCrop", imgCrop)
-        cv2.imshow("ImageWhite", imgWhite)
+        # cv2.imshow("ImageCrop", imgCrop)
+        # cv2.imshow("ImageWhite", imgWhite)
     cv2.imshow("Image", imgOutput)
     cv2.waitKey(1)
