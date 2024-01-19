@@ -11,7 +11,12 @@ data = np.asarray(data_dict['data'])
 labels = np.asarray(data_dict['labels'])
 print (labels)
 
+data_array = np.array(data)
+labels_array = np.array(labels)
 
+# Записуємо дані у файли NumPy
+np.save('data.npy', data_array)
+np.save('labels.npy', labels_array)
 x_train, x_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, shuffle=True, stratify=labels)
 
 model = RandomForestClassifier()

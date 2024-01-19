@@ -3,16 +3,19 @@ import pickle
 import time
 import mediapipe as mp
 import cv2
+import numpy as np
 
 
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 
-hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
+hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3,max_num_hands=1)
+
 
 DATA_DIR = './data'
-selected_folders = ['./0' , './1' , './2']
+selected_folders = ['./0', './1', './2', './3', './4', './5', './6', './7', './8', './9', './10', './11', './12', './13', './14', './15', './16', './17', './18', './19', './20', './21', './22', './23', './24', './25', './26', './27', './28', './29', './30', './31', './32']#'./0','./1', './2', './3', './4'
+
 data = []
 labels = []
 counter = 0
@@ -53,4 +56,4 @@ print(f"Час виконання: {execution_time} секунд")
 f = open('data.pickle', 'wb')
 pickle.dump({'data': data, 'labels': labels}, f)
 f.close()
-print (":")
+
