@@ -47,6 +47,7 @@ for dir_ in os.listdir(DATA_DIR):
         print(f'{dir_, img_path}')
         image = cv2.imread(os.path.join(DATA_DIR, dir_, img_path))
         hands, img = detector.findHands(image)
+        print(img);
         if hands:
             hand = hands[0]
             x, y, w, h = hand['bbox']
