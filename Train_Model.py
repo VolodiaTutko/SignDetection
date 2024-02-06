@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-data_dict = pickle.load(open('./data.pickle', 'rb'))
+data_dict = pickle.load(open('./data4800.pickle', 'rb'))
 
 data = np.asarray(data_dict['data'])
 labels = np.asarray(data_dict['labels'])
@@ -15,8 +15,8 @@ data_array = np.array(data)
 labels_array = np.array(labels)
 
 # Записуємо дані у файли NumPy
-np.save('data.npy', data_array)
-np.save('labels.npy', labels_array)
+# np.save('data.npy', data_array)
+# np.save('labels.npy', labels_array)
 x_train, x_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, shuffle=True, stratify=labels)
 
 model = RandomForestClassifier()

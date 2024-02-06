@@ -5,11 +5,11 @@ import cv2
 
 
 
-DATA_DIR = './data'
+DATA_DIR = './dataMarko'
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-number_of_classes = 15
+number_of_classes = 33
 dataset_size = 100
 
 cap = cv2.VideoCapture(0)
