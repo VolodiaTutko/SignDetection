@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/data" />
+      <excludeFolder url="file://$MODULE_DIR$/data/15" />
+      <excludeFolder url="file://$MODULE_DIR$/data/16" />
+      <excludeFolder url="file://$MODULE_DIR$/data/17" />
+      <excludeFolder url="file://$MODULE_DIR$/data/18" />
+      <excludeFolder url="file://$MODULE_DIR$/data/19" />
+      <excludeFolder url="file://$MODULE_DIR$/data/20" />
+      <excludeFolder url="file://$MODULE_DIR$/data/21" />
+      <excludeFolder url="file://$MODULE_DIR$/data/22" />
+      <excludeFolder url="file://$MODULE_DIR$/data/23" />
+      <excludeFolder url="file://$MODULE_DIR$/data/24" />
+      <excludeFolder url="file://$MODULE_DIR$/data/25" />
+      <excludeFolder url="file://$MODULE_DIR$/data/26" />
+      <excludeFolder url="file://$MODULE_DIR$/data/27" />
+      <excludeFolder url="file://$MODULE_DIR$/data/28" />
+      <excludeFolder url="file://$MODULE_DIR$/data/29" />
+      <excludeFolder url="file://$MODULE_DIR$/data/30" />
+      <excludeFolder url="file://$MODULE_DIR$/data/31" />
+      <excludeFolder url="file://$MODULE_DIR$/data/32" />
+      <excludeFolder url="file://$MODULE_DIR$/train_data" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.10 (SignDetection)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
